@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-color:rgb(46,51,80);
+    display:grid;
+    place-items:center;
+}
+
+.wrapper{
+    width:50vw;
+    aspect-ratio: 1;
+     display:grid;
+     place-items:center;
+     perspective: 100rem; 
+    perspective-origin:76% 4%;
+}
+
+.circle{
+    border-radius: 50%;
+    border:0.3rem dashed #0ff;
+    position:absolute;
+    width:12rem;
+    height:12rem;
+    aspect:1;
+    transform-style:preserve-3d;
+}
+
+.circle-one{
+    transform:rotateY(70deg) rotateX(40deg);
+}
+
+.circle-two{
+    transform:rotateY(70deg) rotateX(-40deg);
+}
+
+.circle-three{
+    transform:rotateY(180deg) rotateX(90deg)
+}
