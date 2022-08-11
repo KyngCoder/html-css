@@ -8,6 +8,7 @@
   height: 100vh;
   display: grid;
   place-items: center;
+
 }
 .wrapper {
   height: 80vh;
@@ -17,6 +18,7 @@
   overflow: hidden;
   width: 80%;
   max-width: 720px;
+  min-width:400px;
 }
 .wrapper div {
   position: absolute;
@@ -61,11 +63,11 @@
     transform: translateY(9rem);
   }
   20% {
-    transform: translateY(14rem);
+    transform: translateY(15rem);
   }
 
   50%, 60% {
-    transform: translateY(25.3rem);
+    transform: translateY(26.3rem);
   }
 
   62% {
