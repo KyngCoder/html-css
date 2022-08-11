@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -18,7 +19,7 @@ body{
      display:grid;
      place-items:center;
      perspective: 100rem; 
-    perspective-origin:76% 4%;
+    perspective-origin:70% 10%;
 }
 
 .circle{
@@ -41,4 +42,22 @@ body{
 
 .circle-three{
     transform:rotateY(180deg) rotateX(90deg)
+} 
+
+.ball{
+    width:2rem;
+    background-image:radial-gradient(rgb(135,214,240),70%,rgb(44,44,167));
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position:absolute;
+    top:3rem;
+    left:calc(50%-3rem);
+}
+
+.ball-one,.ball-two{
+    transform:rotate(-90deg)
+}
+
+.ball-three{
+    transform:rotateY(90deg) rotateX(90deg)
 }
