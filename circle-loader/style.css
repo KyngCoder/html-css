@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:grid;
+    place-items: center;
+    background:rgb(6,6,77);
+    height:100vh;
+}
+
+.spinner{
+    height:50px;
+    width:50px;
+    border:5px solid #a8a8a8;
+    border-top:5px solid white;
+    border-radius: 50%;
+    animation:spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
