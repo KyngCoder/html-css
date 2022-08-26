@@ -1,0 +1,91 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+body {  
+    overflow: hidden;  
+}  
+section {  
+    display: flex;  
+    min-height: 100vh;  
+    align-items: center;  
+    justify-content: center;  
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);  
+}  
+ .colour {  
+    position: absolute;  
+    filter: blur(150px);  
+}  
+ .colour:nth-child(1) {  
+    top: -350px;  
+    width: 600px;  
+    height: 600px;  
+    background: #bf4ad4;  
+}  
+ .colour:nth-child(2) {  
+    left: 100px;  
+    width: 500px;  
+    height: 500px;  
+    bottom: -150px;  
+    background: #ffa500;  
+}  
+.colour:nth-child(3) {  
+    right: 100px;  
+    bottom: 50px;  
+    width: 300px;  
+    height: 300px;  
+    background: #2b67f3;  
+}  
+.container {  
+    width: 400px;  
+    min-height: 200px;  
+    border-radius: 10px;  
+    backdrop-filter: blur(5px);  
+    background: rgba(255, 255, 255, 0.1);  
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+}  
+.form {  
+    width: 100%;  
+    height: 100%;  
+    padding: 40px;  
+}  
+ h2 {  
+    color: #fff;  
+    font-size: 24px;  
+    font-weight: 600;  
+    letter-spacing: 1px;  
+    margin-bottom: 20px;  
+}  
+ 
+.form .input__box {  
+    width: 100%;  
+    margin-bottom: 20px; 
+}  
+.form .input__box input {  
+    width: 100%;  
+    color: #fff;  
+    border: none;  
+    outline: none;  
+    font-size: 16px;  
+    padding: 10px 20px;  
+    letter-spacing: 1px;  
+    border-radius: 35px;  
+    background: rgba(255, 255, 255, 0.2);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+}  
+ 
+ .input__box input[type="submit"] {  
+    color: #666;  
+    cursor: pointer;  
+    background: #fff;  
+    max-width: 100px;  
+    font-weight: 600;  
+}  
+ 
