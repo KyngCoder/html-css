@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow: hidden;
+  padding: 0 20px;
+  background: #02262c;
+}
+
+.wrapper{
+  max-width: 600px;
+  width: 100%;
+  margin: 200px auto;
+  display:flex ;
+  justify-content: center;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  background: rgb(18, 13, 13);
+  box-shadow:1px 2px 3px 4px rgba(62, 72, 75, 0.5)
+}
+
+.wrapper nav{
+  position: relative;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.wrapper nav label{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  color: rgb(68, 193, 255);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#tab1:checked ~ nav label.tab1,
+#tab2:checked ~ nav label.tab2,
+#tab3:checked ~ nav label.tab3,
+#tab4:checked ~ nav label.tab4,
+  #tab5:checked ~ nav label.tab5{
+  color: #fff;
+}
+
+nav .slider{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: #17a2b8;
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+
+#tab2:checked ~ nav .slider{
+  left: 20%;
+}
+#tab3:checked ~ nav .slider{
+  left: 40%;
+}
+#tab4:checked ~ nav .slider{
+  left: 60%;
+}
+#tab5:checked ~ nav .slider{
+  left: 80%;
+}
+
+
