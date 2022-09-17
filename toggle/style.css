@@ -1,0 +1,92 @@
+body{
+    display:flex;
+    height:100vh;
+    align-items: center;
+    justify-content:center;
+}
+
+*,
+*::before,
+*::after {
+  transition: 400ms all ease-in-out 50ms;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ div {
+  background: rgb(32, 188, 24);
+  box-shadow: 0 0 2px rgb(38, 186, 31);
+}
+
+input[type="checkbox"]:checked ~ div label {
+  left: 110px;
+  transform: rotate(360deg);
+}
+
+div,
+label {
+  border-radius: 50px;
+}
+
+div {
+  height: 100px;
+  width: 200px;
+  background: rgba(43, 43, 43, 1);
+  position: relative;
+  box-shadow: 0 0 2px rgba(43, 43, 43, 1);
+}
+
+label {
+  height: 80%;
+  width: 40%;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  cursor: pointer;
+}
+
+label::before {
+  content: "";
+  height: 60px;
+  width: 5px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 2.5px);
+  transform: rotate(45deg);
+}
+
+label::after {
+  content: "";
+  height: 5px;
+  width: 60px;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 30px);
+  transform: rotate(45deg);
+}
+
+label::before,
+label::after {
+  background: rgba(43, 43, 43, 1);
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked ~ div label::before {
+  height: 50px;
+  top: calc(55% - 25px);
+  left: calc(60% - 2.5px);
+  background: rgb(38, 176, 30);
+}
+input[type="checkbox"]:checked ~ div label::after {
+  width: 20px;
+  top: calc(95% - 25px);
+  left: calc(22.5% - 2.5px);
+  background: rgb(38, 165, 32);
+}
