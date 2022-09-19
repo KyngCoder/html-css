@@ -1,0 +1,53 @@
+body {
+    background: #02052b;
+    color: #fff;
+  }
+
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  
+  .social {
+    position: fixed;
+    top: 30%;
+  }
+  .social ul {
+    padding: 0px;
+    transform: translate(-270px, 0);
+  }
+  .social ul li {
+    margin: 0.5rem 5px;
+    background: #22Ae8A;
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+  }
+  .social ul li:hover {
+    transform: translate(110px, 0);
+    background: #444652;
+  }
+  .social ul li:hover a {
+    color: #000;
+  }
+  .social ul li:hover i {
+    color: #fff;
+    background: #000;
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
+  .social ul li i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+  
+  
