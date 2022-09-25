@@ -1,0 +1,22 @@
+
+body {
+  background: black;
+}
+h1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+  -webkit-background-clip: text;
+  background-size: contain;
+  text-align: center;
+  color: transparent;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "frozen";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+}
+h1 {
+  font-size: 20vw;
+  margin: 0;
+  font-family: "frozen", serif;
+  font-weight: 700;
+}
