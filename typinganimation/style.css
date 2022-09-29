@@ -1,0 +1,25 @@
+body{
+    background-color:#e6e6e6;
+    height:100vh;
+    display:grid;
+    place-items:center;
+}
+
+.text{
+    font-size:1.5rem;
+    border-right:4px solid black;
+    white-space: nowrap;
+    overflow:hidden;
+    animation:typewriter 4s steps(18) 1s both infinite, blackCursor 0.5s steps(15) infinite;
+}
+
+
+@keyframes typewriter{
+    0%{width:0;}
+    100%{width:200px};
+}
+
+@keyframes blackCursor{
+    0%{border-right-color:black;}
+    100%{border-right-color:transparent}
+}
