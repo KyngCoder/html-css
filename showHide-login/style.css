@@ -1,0 +1,196 @@
+.Form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  .Form-title {
+    color: #00386a;
+    margin: 0 0 15px;
+  }
+  .Form-description {
+    color: rgba(109, 102, 101, 0.5);
+  }
+  .Form-fields {
+    border-radius: 15px;
+    border: 1px solid #c5c1c0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 15px;
+  }
+  .Control-label {
+    color: #423e3d;
+    font-weight: bold;
+    transition: color 300ms ease;
+  }
+  .Control-requirements {
+    background: pink;
+    border-top: none;
+    margin: -14px 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 200ms ease;
+    padding: 0 9px;
+  }
+  .ControlInput {
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(197, 193, 192, 0) inset;
+    color: #6d6665;
+    margin: 0.8em 0;
+    border: 1px solid #c5c1c0;
+    padding: 0.6em 0.6em;
+    transition: box-shadow 300ms ease-out;
+  }
+  .ControlInput:hover {
+    box-shadow: 0 1px 3px rgba(197, 193, 192, 0.4) inset;
+  }
+  .ControlInput:focus {
+    outline: #2bbee7 auto 3px;
+  }
+  .ControlInput:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+  }
+  .ControlInput:invalid:not(:focus):not(:placeholder-shown) + .Control-label {
+    color: red;
+  }
+  .ControlInput:invalid:not(:focus):not(:placeholder-shown) + .Control-label + .Control-requirements {
+    max-height: 100px;
+    padding: 9px;
+    border: 1px solid red;
+  }
+  .ControlInput:valid:not(:focus):not(:placeholder-shown) {
+    border-color: #5fa550;
+  }
+  .ControlInput:valid:not(:focus):not(:placeholder-shown) + .Control-label {
+    color: #5fa550;
+  }
+  .Control-requirements--email, .ControlInput--email {
+    order: -1;
+  }
+  .Control-label--email {
+    order: -2;
+  }
+  .ControlInput--password {
+    order: 0;
+    padding-right: 50px;
+  }
+  .Control-label--password {
+    order: -1;
+    margin-bottom: -32px;
+  }
+  .Control-label--showPassword {
+    width: 32px;
+    position: relative;
+    top: 52px;
+    left: 100%;
+    text-align: right;
+    margin-left: -36px;
+    cursor: pointer;
+  }
+  .Form-submit {
+    border: 1px solid #e7542b;
+    background-color: #e7542b;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: default;
+    transition: opacity 300ms ease-out, max-width 150ms ease-out;
+    outline: none;
+    position: relative;
+    margin: auto;
+  }
+  .Form-submit:hover {
+    background-color: #c83d17;
+  }
+  .Form-submit:active {
+    background-color: #9b2f11;
+    max-width: 50px;
+    overflow: hidden;
+    text-indent: 300px;
+  }
+  .Form-submit:active .Button-spinner {
+    opacity: 1;
+  }
+  .ControlInput--email:valid ~ .ControlInput--password:valid ~ .Form-submit {
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .Button-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+    opacity: 0;
+  }
+  .show-password {
+    display: none;
+  }
+  .show-password:checked ~ .ControlInput--password {
+    text-security: disc;
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+  }
+  .show-password:checked ~ .Control-label--showPassword .svg-toggle-password .closed-eye {
+    opacity: 1;
+    transition: opacity 300ms ease, height 400ms ease;
+    width: 4px;
+    height: 44px;
+  }
+  .svg-toggle-password {
+    fill: rgba(0, 142, 214, 0.5);
+  }
+  .svg-toggle-password .closed-eye {
+    opacity: 0;
+    height: 0;
+  }
+  .Button {
+    padding: 10px;
+    user-select: none;
+  }
+  .spinner {
+    animation: dash 2s linear infinite;
+    animation-direction: normal;
+  }
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 150.6 100.4;
+    }
+    50% {
+      stroke-dasharray: 1 250;
+    }
+    100% {
+      stroke-dashoffset: 502;
+      stroke-dasharray: 150.6 100.4;
+    }
+  }
+  @keyframes spinner-in {
+    0% {
+      opacity: 0;
+    }
+    20%, 80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  body {
+    background-color: black;
+    display: flex;
+    min-height: 100%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
