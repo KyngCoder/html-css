@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: #6886ff;
+  }
+  .btn-group {
+    display: inline-flex;
+    position: relative;
+  }
+  .btn-group:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 0;
+    bottom: -12px;
+    left: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .btn-group button {
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    position: relative;
+    top: 0;
+    padding: 12px 16px;
+    margin:0 -1px;
+    transition: top 150ms linear;
+  }
+  .btn-group button:first-child {
+    border-radius: 8px 0 0 8px;
+    margin: 0;
+  }
+  .btn-group button:last-child {
+    border-radius: 0 8px 8px 0;
+    margin: 0;
+  }
+  .btn-group button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1px;
+    right: 1px;
+    bottom: -12px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #000;
+    transition: bottom 140ms linear;
+  }
+  .btn-group button:first-child:before {
+    border-radius: 8px 0 0 8px;
+  }
+  .btn-group button:last-child:before {
+    border-radius: 0 8px 8px 0;
+  }
+  .btn-group button:hover {
+    top: 4px;
+  }
+  .btn-group button:hover:before {
+    bottom: -8px;
+  }
+  .btn-group button:active {
+    top: 12px;
+  }
+  .btn-group button:active:before {
+    bottom: 0px;
+  }
+  
