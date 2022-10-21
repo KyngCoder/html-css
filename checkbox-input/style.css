@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #150570, #06011a);
+}
+
+.container {
+  max-width: 640px;
+}
+
+ul.tabs {
+  list-style: none;
+  padding: 20px;
+}
+ul.tabs li {
+  display: inline;
+}
+ul.tabs li label {
+  display: inline-block;
+  background-color: rgba(86, 69, 69, 0.9);
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #fff8f8;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+ul.tabs li label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.tabs li label::before {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.tabs li input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.tabs li input[type="checkbox"]:checked + label {
+  border: 2px solid #1bdbf8;
+  background-color: #12bbd4;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+ul.tabs li input[type="checkbox"] {
+  display: absolute;
+}
+ul.tabs li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.tabs li input[type="checkbox"]:focus + label {
+  border: 2px solid #1aff05;
+}
