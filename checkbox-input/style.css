@@ -5,11 +5,9 @@ body {
   height: 100vh;
   background: linear-gradient(to right, #150570, #06011a);
 }
-
 .container {
   max-width: 640px;
 }
-
 ul.tabs {
   list-style: none;
   padding: 20px;
@@ -28,12 +26,10 @@ ul.tabs li label {
   user-select: none;
   transition: all 0.2s;
 }
-
 ul.tabs li label {
   padding: 8px 12px;
   cursor: pointer;
 }
-
 ul.tabs li label::before {
   display: inline-block;
   font-weight: 900;
@@ -42,20 +38,17 @@ ul.tabs li label::before {
   content: "\f067";
   transition: transform 0.3s ease-in-out;
 }
-
 ul.tabs li input[type="checkbox"]:checked + label::before {
   content: "\f00c";
   transform: rotate(-360deg);
   transition: transform 0.3s ease-in-out;
 }
-
 ul.tabs li input[type="checkbox"]:checked + label {
   border: 2px solid #1bdbf8;
   background-color: #12bbd4;
   color: #fff;
   transition: all 0.2s;
 }
-
 ul.tabs li input[type="checkbox"] {
   display: absolute;
 }
