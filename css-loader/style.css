@@ -12,7 +12,6 @@ body {
     border-radius: 50%;
     border: 1px solid #cdcbd0;
   }
-  
   .circle-wrap .circle .mask,
   .circle-wrap .circle .fill {
     width: 150px;
@@ -20,11 +19,9 @@ body {
     position: absolute;
     border-radius: 50%;
   }
-  
   .circle-wrap .circle .mask {
     clip: rect(0px, 150px, 150px, 75px);
   }
-  
   .circle-wrap .inside-circle {
     width: 122px;
     height: 122px;
@@ -40,21 +37,15 @@ body {
     font-weight: 700;
     font-size: 2em;
   }
-  
-  /* color animation */
-  
-  /* 3rd progress bar */
   .mask .fill {
     clip: rect(0px, 75px, 150px, 0px);
     background-color: #227ded;
-  }
-  
+  } 
   .mask.full,
   .circle .fill {
     animation: fill  3s  infinite alternate;
     transform: rotate(135deg);
   }
-  
   @keyframes fill{
     0% {
       transform: rotate(0deg);
