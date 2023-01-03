@@ -1,0 +1,63 @@
+
+body{
+	background-color: black;
+	height:100vh;
+	display: grid;
+	place-items: center;
+}
+
+.btn {		
+	padding: 1rem 2rem;
+	position: relative;
+	font-size: 1.4rem;
+	color: rgb(77, 223, 9);
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+	outline:none;
+	border:1px solid blue;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color:white;
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background:blue;
+	transition-delay: .35s;
+}
+
+.left:before, 
+.left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.left:before {
+	right: 0;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.left:after {
+	left: 0;
+}
+
+.left:hover:before,
+.left:hover:after {
+	width: 100%;
+}
