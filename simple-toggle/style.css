@@ -1,0 +1,52 @@
+body{
+    height:100vh;
+    width:100vw;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.container {
+    position: relative;
+  }
+  
+  #toggle {
+    display: none;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 19px;
+    transition: 0.3s;
+  }
+  
+  #toggle:checked + label {
+    background: #66bb6a;
+  }
+  
+  #toggle:checked + label:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+  }
+  
+  
+  
