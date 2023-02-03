@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f3f0f1;
+}
+body .button {
+  width: 400px;
+  height: 100px;
+  background: #f3f0f1;
+  position: relative;
+  background: #f3f0f1;
+  margin-bottom: 25px;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+body .button span {
+  line-height: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: semibold;
+}
+body .button {
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  color: #087b97;
+}
+body .button:hover {
+  opacity: 1;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
